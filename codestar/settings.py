@@ -9,6 +9,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 
+if os.path.exists('env.py'):
+    import env
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
@@ -23,7 +26,7 @@ SECRET_KEY = 'django-insecure-@@6lv^+bmik9)#6$1dkf&=pgrx#r&tj6!(-29p_pxw94&poltz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fst-website-pp4.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['codestar2021.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -37,6 +40,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'blog',
 ]
 
@@ -131,4 +135,4 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#unset PGHOSTADDR
+# unset PGHOSTADDR
