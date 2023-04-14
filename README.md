@@ -2,6 +2,8 @@
 ## Bluedit
 This website is intended for people sharing their experiences with other users for inspiration and ideas or simply sharing their thoughts. The forum has a post section where you can add pictures with comments and add likes under each post.
 
+## User stories
+
 ## Existing Features
 
 ## The Home Page 

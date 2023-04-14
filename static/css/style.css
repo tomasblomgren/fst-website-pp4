@@ -140,3 +140,7 @@ body {
     background: transparent;
     border: none;
 }
+
+.nav-link {
+    position: right;
+}
