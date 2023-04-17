@@ -42,6 +42,7 @@ This website is intended for people sharing their experiences with other users f
 
 ![ERD](media/mind-map.jpg)
 
+![Wireframe](media/Wireframe-PP4.png)
 
 ## Deployment to Heroku
 The application has been created on Heroku with the following steps:
