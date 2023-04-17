@@ -3,6 +3,14 @@
 This website is intended for people sharing their experiences with other users for inspiration and ideas or simply sharing their thoughts. The forum has a post section where you can add pictures with comments and add likes under each post.
 
 ## User stories
+- As a user i want to be able to create a profile to access the website
+- As a user i want to be able to view content that interests me
+- As a user i want to upvote posts 
+- As a user i want to be able to comment under posts to share my thoughts and opinions
+- As a user i want to create posts that can include pictures and text
+
+## User story implementation
+- The registration has been done with the allauth library and customized
 
 ## Existing Features
 
@@ -16,8 +24,6 @@ This website is intended for people sharing their experiences with other users f
 
 ## Testing
 
-### The services used for testing the code
-
 ### HTML
 
 ### CSS
@@ -25,6 +31,12 @@ This website is intended for people sharing their experiences with other users f
 ### Unfixed bugs
 
 ### Further Testing
+
+### Planning 
+
+![ERD]
+
+![Wireframe]
 
 ## Deployment to Heroku
 The application has been created on Heroku with the following steps:
