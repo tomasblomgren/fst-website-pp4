@@ -14,6 +14,11 @@ This website is intended for people sharing their experiences with other users f
 - 
 
 ## Existing Features
+- The user can create their own profile that then makes the content viewable to the user
+- The navbar is displayed on top of the page without borders with a cleaner look for the user
+- The website has a post section divided into three post per row and then it creates a new row below
+- When the user clicks on one specific post it displays on full screen with rendering across the screen
+- T
 
 ## The Home Page 
 
@@ -48,6 +53,8 @@ The application has been created on Heroku with the following steps:
 - The setup and the shell of the website has been taken from I think therefore i blog
 
 ### Media
+
+- 
 
 ## Acknowledgements 
 - My mentor for tremendous help and coaching
