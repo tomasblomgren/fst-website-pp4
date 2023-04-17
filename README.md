@@ -11,6 +11,7 @@ This website is intended for people sharing their experiences with other users f
 
 ## User story implementation
 - The registration has been done with the allauth library and customized
+- 
 
 ## Existing Features
 
@@ -34,9 +35,8 @@ This website is intended for people sharing their experiences with other users f
 
 ### Planning 
 
-![ERD]
+![ERD](media/mind-map.jpg)
 
-![Wireframe]
 
 ## Deployment to Heroku
 The application has been created on Heroku with the following steps:
