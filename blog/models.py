@@ -45,3 +45,9 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
+
+
+class edit_post(models.Model):
+    def edit_post(self):
+
+        return render(request, 'templates/edit_post')

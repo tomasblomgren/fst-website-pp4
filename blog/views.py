@@ -78,3 +78,10 @@ class Postlike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+class edit_post(View):
+    def get(self, request, *args, **kwargs):
+        queryset = Post.object.filter(status=1)
+        post = get_object_or_404(queryset, slug=slug)
+        return render(request, 'templates/edit_post.html')

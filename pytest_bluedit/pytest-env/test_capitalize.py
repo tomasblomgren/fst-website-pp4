@@ -1,5 +1,4 @@
 import pytest
-from django.db import messages
 
 
 def capital_case(x):
