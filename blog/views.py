@@ -1,9 +1,11 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.views.generic.edit import UpdateView
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post
+from .models import Post, EditPost
 from .forms import CommentForm
 from django.contrib.auth.decorators import login_required
+from django.urls import reverse_lazy
 
 
 class PostList(generic.ListView):
@@ -80,8 +82,13 @@ class Postlike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class edit_post(View):
-    def get(self, request, *args, **kwargs):
-        queryset = Post.object.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-        return render(request, 'templates/edit_post.html')
+class EditPost(UpdateView):
+    
+    model = EditPost()
+    
+    fields = [
+        'title'
+        'description'
+        ]
+
+    success_url = '/'

@@ -47,7 +47,14 @@ class Comment(models.Model):
         return f"Comment {self.body} by {self.name}"
 
 
-class edit_post(models.Model):
-    def edit_post(self):
+class EditPost(models.Model):
+    name = models.CharField(max_length=50)
+    description = models.TextField()
 
-        return render(request, 'templates/edit_post')
+    fields = [
+        'title'
+        'description'
+    ]
+
+    success_url = '/'
+

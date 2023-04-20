@@ -144,3 +144,16 @@ body {
 .nav-link {
     position: right;
 }
+
+.nav-item {
+    color: #E84610;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+}
+
+.card-text {
+    color: #E84610;
+    border: none;
+    background: transparent;
+}
