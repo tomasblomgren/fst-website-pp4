@@ -47,14 +47,10 @@ class Comment(models.Model):
         return f"Comment {self.body} by {self.name}"
 
 
-class EditPost(models.Model):
+class EditPostView(models.Model):
 
-    name = models.CharField(max_length=50)
+    title = models.CharField(max_length=200)
     description = models.TextField()
 
-    fields = [
-        'name'
-        'description'
-    ]
-
-    success_url = '/'
+    def __str__(self):
+        return self.title

@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views.generic.edit import UpdateView
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post, EditPost
+from .models import Post, EditPostView
 from .forms import CommentForm
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
@@ -82,7 +82,10 @@ class Postlike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class EditPost(UpdateView):
-    model = EditPost()
+class PostEditView(UpdateView):
+    model = Post
+    template_name = 'edit_post.html'
+    fields = ['title', 'content']  # Add the fields you want to include in the form
 
-    success_url = '/home'
+    def get_success_url(self):
+        return reverse_lazy('post_detail', kwargs={'pk': self.object.pk})
