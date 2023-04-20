@@ -48,13 +48,13 @@ class Comment(models.Model):
 
 
 class EditPost(models.Model):
+
     name = models.CharField(max_length=50)
     description = models.TextField()
 
     fields = [
-        'title'
+        'name'
         'description'
     ]
 
     success_url = '/'
-

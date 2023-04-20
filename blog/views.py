@@ -83,12 +83,6 @@ class Postlike(View):
 
 
 class EditPost(UpdateView):
-    
     model = EditPost()
-    
-    fields = [
-        'title'
-        'description'
-        ]
 
-    success_url = '/'
+    success_url = '/home'
