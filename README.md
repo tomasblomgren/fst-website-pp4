@@ -24,8 +24,6 @@ This website is intended for people sharing their experiences with other users f
 
 ## Admin Page
 
-## Subscribe form
-
 ## Footer
 
 ## Testing
@@ -34,24 +32,33 @@ This website is intended for people sharing their experiences with other users f
 
 ### CSS
 
+### Python
+
+### Javascript
+
 ### Unfixed bugs
 
 ### Further Testing
 
 ### Planning 
 
-![ERD](media/mind-map.jpg)
+![ERD](media/erd-for-pp4.jpg)
 
-![Wireframe](media/Wireframe-PP4.png)
+![Wireframes](media/Wireframe-PP4.png)
+![](media/Wireframe%20PP4%20W(720px)%20H%20(659px).png)
+![](media/Wireframe%20PP4%20fullscreen.png)
+
 
 ## Deployment to Heroku
 The application has been created on Heroku with the following steps:
 - 
 ## Credits and sources
-
+- CRUD funtionality https://www.geeksforgeeks.org/delete-view-function-based-views-django/?ref=lbp 
 ### Content
 
 - The setup and the shell of the website has been taken from I think therefore i blog
+- The ideas has been taken and implemented by hello django
+- The pictures are taken from ...
 
 ### Media
 

@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse
-from django.views.generic.edit import UpdateView
+from django.views.generic.edit import UpdateView, DeleteView
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post, EditPostView
@@ -37,6 +37,7 @@ class PostDetail(View):
             },
         )
 
+    @login_required
     def post(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -85,6 +86,15 @@ class Postlike(View):
 class PostEditView(UpdateView):
     model = Post
     template_name = 'edit_post.html'
+    fields = ['title', 'content']  # Add the fields you want to include in the form
+
+    def get_success_url(self):
+        return reverse_lazy('post_detail', kwargs={'pk': self.object.pk})
+
+
+class EditSuccess(DeleteView):
+    model = Post
+    template_name = 'confirm_delete.html'
     fields = ['title', 'content']  # Add the fields you want to include in the form
 
     def get_success_url(self):

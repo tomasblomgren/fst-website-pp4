@@ -27,7 +27,11 @@
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
 
-                            <a class="nav-item" href=" {% url 'edit_post' post.slug %}">Edit
+                            <a class="nav-item" href=" {% url 'edit_post' post.id %}">Edit
+
+                                <p class="card-text">{{ post.excerpt }}</p>
+                            </a>
+                            <a class="nav-item" href=" {% url 'delete_confirm' post.id %}">Delete
 
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
