@@ -20,4 +20,9 @@ def capital_case(x):
     return x.capitalize()
 
 
+def test_user_logged_in(user):
+    response = user.get('/profile')
+    assert response.status_code == 200
+    assert b'Welcome, username!' in response.data
+
 # pytest pytest_bluedit/pytest-env/

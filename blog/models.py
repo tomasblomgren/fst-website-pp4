@@ -56,4 +56,3 @@ class EditPostView(models.Model):
     def __str__(self):
         # return self.title
         return reverse_lazy(request, '/', context)
-

@@ -31,24 +31,29 @@ This website is intended for people sharing their experiences with other users f
 ## Testing
 
 ### HTML
-
+- HTML checker has been used to validate each separate page for error
+- base.html : The errors displayed in the html validator refers to the django functions such as {% endif %} and says illegal characters "{" and the not allowed in href links
+- index.html : 
+- edit_post.html : The error are refering to python/django formats and says there are no doctype present in the file(which is injected from the base.html)
+- post_detail.html : Under post detail it gives me the error from the inline css code saying that its expecting a digit but is given a percentage instead
 ### CSS
-
+- W3C Jigsaw validator has been used to check the css file in this project: 
+- The errors are concerning line 83 and 84 (-moz-transform and -webkit-transform) and says its not supported by all search engines
 ### Python
 
 ### Javascript
 
 ### Unfixed bugs
-
+- The delete funtion is refering to a 404 status code 
 ### Further Testing
-
+- Further testing has been done with pytest with the intention of checking if the user is logged in with the status code respone returning 200 which means there is a connection between the user and the application
 ### Planning 
 
 ![ERD](media/erd-for-pp4.jpg)
 
 ![Wireframes](media/Wireframe-PP4.png)
-![](media/Wireframe%20PP4%20W(720px)%20H%20(659px).png)
-![](media/Wireframe%20PP4%20fullscreen.png)
+![medium screens](media/Wireframe%20PP4%20W(720px)%20H%20(659px).png)
+![full screen](media/Wireframe%20PP4%20fullscreen.png)
 
 
 ## Deployment to Heroku
@@ -64,10 +69,10 @@ The application has been created on Heroku with the following steps:
 
 - The setup and the shell of the website has been taken from I think therefore i blog
 - The ideas has been taken and implemented by hello django
-- The pictures are taken from ...
+
 
 ### Media
-
+- The pictures are taken from ...
 - 
 
 ## Acknowledgements 

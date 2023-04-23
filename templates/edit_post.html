@@ -2,6 +2,7 @@
 
 {% load i18n %}
 {% load account socialaccount %}
+{% load crispy_forms_tags %}
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
@@ -9,7 +10,13 @@
 
 <div class="container">
     <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h3>{% trans "Sign In" %}</h3>
 
+            <p>{% blocktrans %} To leave a comment or like a post, please log in. If you
+                have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
+                first.{% endblocktrans %}</p>
+        </div>
     </div>
     <form action="POST">
         {% csrf_token %}
@@ -22,7 +29,7 @@
             <!-- Security token by Django -->
             {% csrf_token %}
             Are you want to delete this item ?
-            <input type="submit" value="Yes" />
+            <input type="submit" value="Yes">
             <a href="/">Cancel </a>
         </form>
     </div>
