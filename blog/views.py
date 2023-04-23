@@ -70,6 +70,7 @@ class PostDetail(View):
         )
 
 
+@login_required
 class Postlike(View):
 
     def post(self, request, slug, *args, **kwargs):

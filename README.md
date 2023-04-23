@@ -11,18 +11,20 @@ This website is intended for people sharing their experiences with other users f
 
 ## User story implementation
 - The registration has been done with the allauth library and customized
-- 
+- Viewing posts has been implemented with django in a separate page to view the full post or in a feed format displayed on the front page
+- Each post has a been split into the picture section, the post card section and the likes and datetime section. The user selects a picture to display on the top part of the card with the author of the posts name displayed at the bottom of the picture. The likes works as a toggle function where the user either clicks in to give a like or leave it to default which is not upvoted at all
+- On each post the user has the ability to edit or delete content on the page to their own preference if they change their mind
+- Under the post detail where the user views the full page they have an option of commenting on the created post. This function is restricted to users only
 
 ## Existing Features
-- The user can create their own profile that then makes the content viewable to the user
+- The user can create their own profile
 - The navbar is displayed on top of the page without borders with a cleaner look for the user
-- The website has a post section divided into three post per row and then it creates a new row below
-- When the user clicks on one specific post it displays on full screen with rendering across the screen
-- T
+- The website has a post section divided into three post per row and then it creates a new row below when viewed on a full screen
+- When the user clicks on one specific post it displays on full screen rendering across the screen
+- The user has the option to pick on a created page to either edit or delete the post entirely
+- Under each post the user can see the date when the post was created and leave a like for the poster
 
 ## The Home Page 
-
-## Admin Page
 
 ## Footer
 
@@ -52,6 +54,10 @@ This website is intended for people sharing their experiences with other users f
 ## Deployment to Heroku
 The application has been created on Heroku with the following steps:
 - 
+-
+-
+-
+-
 ## Credits and sources
 - CRUD funtionality https://www.geeksforgeeks.org/delete-view-function-based-views-django/?ref=lbp 
 ### Content
