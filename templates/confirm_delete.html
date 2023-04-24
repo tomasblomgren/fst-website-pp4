@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+{% load crispy_forms_tags %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+
+    </div>
+    <br>
+    <br>
+    <form action="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Save">
+    </form>
+    <div class="main-delete-form">
+        <!-- Create a Form -->
+        <form method="POST">
+            <!-- Security token by Django -->
+            {% csrf_token %}
+            Are you want to delete this item ?
+            <input type="submit" value="Yes">
+            <a href="/">Cancel </a>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

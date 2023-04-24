@@ -154,3 +154,7 @@ body {
     border: none;
     background: transparent;
 }
+
+.main-delete-form {
+    position: relative;
+}

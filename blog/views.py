@@ -6,6 +6,7 @@ from .models import Post, EditPostView
 from .forms import CommentForm
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
+from django.contrib import messages
 
 
 class PostList(generic.ListView):

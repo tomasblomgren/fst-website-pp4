@@ -53,9 +53,9 @@ This website is intended for people sharing their experiences with other users f
 
 ![ERD](media/erd-for-pp4.jpg)
 
-![Wireframes](media/Wireframe-PP4.png)
-![medium screens](media/Wireframe%20PP4%20W(720px)%20H%20(659px).png)
-![full screen](media/Wireframe%20PP4%20fullscreen.png)
+![Wireframes](media/new-wireframe-1-small-screen-pp4.png)
+![medium screens](media/new-wireframe-2%20pp4-medium-size.png)
+![full screen](media/new-wireframe-3-pp4-fullscreen.png)
 
 
 ## Deployment to Heroku
