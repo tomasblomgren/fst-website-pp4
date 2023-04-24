@@ -6,7 +6,7 @@ This website is intended for people sharing their experiences with other users f
 
 ## User stories
 - As a user i want to be able to create a profile to access the website
-- As a user i want to be able to view content that interests me
+- As a user i want to be able to view content that interests the user
 - As a user i want to upvote posts 
 - As a user i want to be able to comment under posts to share my thoughts and opinions
 - As a user i want to create posts that can include pictures and text
@@ -51,7 +51,7 @@ This website is intended for people sharing their experiences with other users f
 - Further testing has been done with pytest with the intention of checking if the user is logged in with the status code respone returning 200 which means there is a connection between the user and the application
 ### Planning 
 
-![ERD](media/erd-for-pp4.jpg)
+![ERD](media/erd-pp4-postgresql.png)
 
 ![Wireframes](media/new-wireframe-1-small-screen-pp4.png)
 ![medium screens](media/new-wireframe-2%20pp4-medium-size.png)

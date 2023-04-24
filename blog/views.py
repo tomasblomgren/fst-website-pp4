@@ -100,3 +100,21 @@ class EditSuccess(DeleteView):
 
     def get_success_url(self):
         return reverse_lazy('post_detail', kwargs={'pk': self.object.pk})
+
+
+class SuccessEditingView(UpdateView):
+    model = Post
+    template_name = 'save_success'
+    fields = ['title', 'content']  # Add the fields you want to include in the form
+
+    def get_success_url(self):
+        return reverse_lazy('post_detail', kwargs={'pk': self.object.pk})
+
+
+class SuccessDeletingView(DeleteView):
+    model = Post
+    template_name = 'delete_success'
+    fields = ['title', 'content']  # Add the fields you want to include in the form
+
+    def get_success_url(self):
+        return reverse_lazy('post_detail', kwargs={'pk': self.object.pk})

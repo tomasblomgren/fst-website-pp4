@@ -20,8 +20,8 @@ def capital_case(x):
     return x.capitalize()
 
 
-def test_user_logged_in(user):
-    response = user.get('/profile')
+def test_user_logged_in(admin):
+    response = admin.get('/profile')
     assert response.status_code == 200
     assert b'Welcome, username!' in response.data
 
