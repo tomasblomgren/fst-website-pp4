@@ -2,6 +2,8 @@
 ## Bluedit
 This website is intended for people sharing their experiences with other users for inspiration and ideas or simply sharing their thoughts. The forum has a post section where you can add pictures with comments and add likes under each post.
 
+# Agile development
+
 ## User stories
 - As a user i want to be able to create a profile to access the website
 - As a user i want to be able to view content that interests me
@@ -25,10 +27,10 @@ This website is intended for people sharing their experiences with other users f
 - Under each post the user can see the date when the post was created and leave a like for the poster
 
 ## The Home Page 
-
+- The home pages features are a navigation bar on the top left where the user can login and logout and register for an account
 ## Footer
 
-## Testing
+# Testing
 
 ### HTML
 - HTML checker has been used to validate each separate page for error
