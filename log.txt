@@ -1,0 +1,22 @@
+-----> Building on the Heroku-22 stack
+-----> Using buildpack: heroku/python
+-----> Python app detected
+-----> Using Python version specified in runtime.txt
+ !     
+ !     A Python security update is available! Upgrade as soon as possible to: python-3.9.16
+ !     See: https://devcenter.heroku.com/articles/python-runtimes
+ !     
+-----> No change in requirements detected, installing from cache
+-----> Using cached install of python-3.9.15
+-----> Installing pip 23.0.1, setuptools 67.6.1 and wheel 0.40.0
+-----> Installing SQLite3
+-----> Installing requirements with pip
+-----> $ python manage.py collectstatic --noinput
+       0 static files copied, 246 post-processed.
+-----> Discovering process types
+       Procfile declares types -> web
+-----> Compressing...
+       Done: 44.4M
+-----> Launching...
+       Released v44
+       https://fst-website-pp4.herokuapp.com/ deployed to Heroku
