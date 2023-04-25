@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-@@6lv^+bmik9)#6$1dkf&=pgrx#r&tj6!(-29p_pxw94&poltz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bluedit2021.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['fst-website-pp4.herokuapp.com', 'localhost']
 
 
 # Application definition
